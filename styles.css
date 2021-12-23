@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body {
+  width: 100vw;
+  height: 100%;
+}
+main {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cv1 {
+  display: flex;
+  max-width: 1000px;
+  min-height: 900px;
+  background-color: #f8f8f8;
+  box-shadow: 5px 5px 15px 5px #000000;
+  color: #343434;
+  margin-bottom: 5em;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.left {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0px 0px 10px 0;
+  flex: 1 1 0px;
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 300px;
+}
+.imageWrapper > img {
+  height: 80%;
+  width: 80%;
+  object-fit: cover;
+}
+.top .top-section {
+  display: flex;
+  align-items: end;
+  height: 500px;
+  width: 100%;
+  background-color: #343434;
+}
+
+.experience-section {
+  padding: 15px;
+}
+.intoduction {
+  padding: 0 0 15px 15px;
+}
+.intoduction > p {
+  display: block;
+  font-size: 5em;
+  color: #f8f8f8;
+  line-height: 0.9em;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.08em;
+}
+.intoduction > span {
+  color: lightgray;
+  font-size: smaller;
+  letter-spacing: 0.6em;
+}
+section.right {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0 10px 0;
+  flex: 1 1 0px;
+  border-left: 2px solid #343434;
+}
+
+.experience {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 3em;
+}
+
+.experience header {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+.experience > .icon-wrapper {
+  margin-right: 5px;
+}
+.experience-text > ul {
+  padding-left: 17px;
+}
+
+.highlights-section {
+  padding: 15px;
+}
+
+.highlights {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.highlights > .icon-wrapper {
+  margin-right: 5px;
+}
+.highlights header {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+.highlights > ul {
+  padding-left: 17px;
+}
+
+.highlights p:first-of-type {
+  font-style: italic;
+  font-size: small;
+  margin-bottom: 0.5em;
+}
+.highlights-text {
+  margin-bottom: 3em;
+}
+.highlights-text > ul {
+  padding-left: 17px;
+}
+
+@media (max-width: 768px) {
+  .cv1 {
+    flex-direction: column-reverse;
+    box-shadow: none;
+  }
+  section.right {
+    border-left: none;
+  }
+}
